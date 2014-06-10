@@ -1,0 +1,45 @@
+			//start=5;
+			//end=find(data, ' ', start, index);
+			//leds = 0;
+				//unsigned header[] = 
+//"HTTP/1.1 200 OK\r\n\
+//Date: Monday June 9 11:16:00 2014\r\n\
+//Server: SWM-web/0.0\r\n\
+//Content-Type: text/html\r\n\"\
+//Content-Length: ";
+                        
+                        //length = 0x0F6u;//246
+                        //output_socket(length);
+                        //index = 0;
+                        //for(i=0;i<length;i+=2){
+                            //word = page1[index];
+                            //index++;
+                            //word = ((word << 8) & 0xff) & page1[index];
+                            
+                            //output_socket(word);                            
+                        //}
+                        //socket_flush();
+
+
+
+//Packet ARP By AMER
+//00 18 f3 52 fb ee 00 01 02 03 04 05 08 06 00 01
+//08 00 06 04 00 01 00 01 02 03 04 05 c0 a8 00 77
+//00 18 f3 52 fb ee c0 a8 00 69 
+//E3B332B0
+
+        //AMER send ARP custom
+        //Packet ARP By AMER
+//00 18 f3 52 fb ee 00 01 02 03 04 05 08 06 00 01
+//08 00 06 04 00 01 00 01 02 03 04 05 c0 a8 00 77
+//00 18 f3 52 fb ee c0 a8 00 69 
+//E3B332B0
+
+//        put_ip_packet(
+//				tx_packet,
+//				total_length,
+//				1,//icmp
+//				packet[13], //remote ip
+//				packet[14]  //remote ip
+//			);
+                        ////////////////////////////////

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:07:37 MDT 2013
+# Start of session at: Tue May 20 11:16:20 2014
+# Process ID: 18809
+# Log file: /home/amer/Nexys3/TCP/planAhead_run_1/planAhead.log
+# Journal file: /home/amer/Nexys3/TCP/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/amer/Nexys3/TCP/pa.fromNetlist.tcl
+set_property slew FAST [get_ports [list {TXD[3]}]]
+set_property slew FAST [get_ports [list {TXD[2]}]]
+set_property slew FAST [get_ports [list {TXD[0]}]]
+set_property slew FAST [get_ports [list {TXD[1]}]]
+save_constraints
+set_property slew FAST [get_ports [list {RXD[3]}]]
+set_property slew FAST [get_ports [list {RXD[1]}]]
+set_property slew FAST [get_ports [list {RXD[3]} {RXD[2]} {RXD[1]} {RXD[0]}]]
+save_constraints
+set_property iostandard LVCMOS25 [get_ports [list {TXD[3]}]]
+save_constraints

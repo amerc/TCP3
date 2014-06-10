@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:07:37 MDT 2013
+# Start of session at: Tue May 20 11:16:20 2014
+# Process ID: 18809
+# Log file: /home/amer/Nexys3/TCP/planAhead_run_1/planAhead.log
+# Journal file: /home/amer/Nexys3/TCP/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/amer/Nexys3/TCP/pa.fromNetlist.tcl
+# create_project -name TCP -dir "/home/amer/Nexys3/TCP/planAhead_run_1" -part xc6slx16csg324-3
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2623.699 ; gain = 23.047
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/amer/Nexys3/TCP/NEXYS3.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/amer/Nexys3/TCP} }
+# set_property target_constrs_file "/home/amer/Nexys3/TCP/xilinx_input/NEXYS3.ucf" [current_fileset -constrset]
+Adding file '/home/amer/Nexys3/TCP/xilinx_input/NEXYS3.ucf' to fileset 'constrs_1'
+# add_files [list {/home/amer/Nexys3/TCP/xilinx_input/NEXYS3.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx16csg324-3
+Release 14.6 - ngc2edif P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.6 - ngc2edif P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design NEXYS3.ngc ...
+WARNING:NetListWriters:298 - No output is written to NEXYS3.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_58_OUT_rs_cy<6 : 3> on
+   block NEXYS3 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   ethernet_inst_1/Msub_GND_7_o_GND_7_o_sub_168_OUT<10:0>_cy<8 : 2> on block
+   NEXYS3 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ethernet_inst_1/_n1050<10 : 0> on block
+   NEXYS3 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SERVER_INST_1/instruction_0<53 : 0> on
+   block NEXYS3 is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file NEXYS3.edif ...
+ngc2edif: Total memory usage is 115664 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/TCP.data/cache/NEXYS3_ngc_7f04105c.edif]
+Finished Parsing EDIF File [./planAhead_run_1/TCP.data/cache/NEXYS3_ngc_7f04105c.edif]
+INFO: [Netlist 29-17] Analyzing 156 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'NEXYS3' is not ideal for floorplanning, since the cellview 'NEXYS3' defined in file 'NEXYS3.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from /opt/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from /opt/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from /opt/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from /opt/14.6/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/14.6/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/14.6/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/amer/Nexys3/TCP/xilinx_input/NEXYS3.ucf]
+Finished Parsing UCF File [/home/amer/Nexys3/TCP/xilinx_input/NEXYS3.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 156 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+  IOBUF => IOBUF (OBUFT, IBUF): 7 instances
+  RAM16X1D => RAM16X1D (RAMD32, RAMD32, GND): 64 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 40 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 8 instances
+
+Phase 0 | Netlist Checksum: 81e240c3
+link_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 2814.492 ; gain = 180.656
+set_property slew FAST [get_ports [list {TXD[3]}]]
+set_property slew FAST [get_ports [list {TXD[2]}]]
+set_property slew FAST [get_ports [list {TXD[0]}]]
+set_property slew FAST [get_ports [list {TXD[1]}]]
+save_constraints
+set_property slew FAST [get_ports [list {RXD[3]}]]
+set_property slew FAST [get_ports [list {RXD[1]}]]
+set_property slew FAST [get_ports [list {RXD[3]} {RXD[2]} {RXD[1]} {RXD[0]}]]
+save_constraints
+set_property iostandard LVCMOS25 [get_ports [list {TXD[3]}]]
+save_constraints
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See /home/amer/Nexys3/TCP/planAhead_pid18809.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue May 20 11:35:49 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead

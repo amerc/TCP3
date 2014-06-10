@@ -1,0 +1,11 @@
+from chips import *
+
+>>> #create a chip model
+... my_chip = Chip(
+...     Console(
+...         Printer(
+...             Counter(0, 10, 1),
+...         ),
+...     ),
+... )
+

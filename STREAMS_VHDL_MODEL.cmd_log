@@ -1,0 +1,1 @@
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP_2/STREAMS_VHDL_MODEL.vhi -module STREAMS_VHDL_MODEL -template /opt/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work source/SerialCom.vhd 

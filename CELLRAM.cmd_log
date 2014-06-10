@@ -1,0 +1,5 @@
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP_2/CELLRAM.vhi -module CELLRAM -template /opt/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work source/CELLRAM.vhd 
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP_2/CELLRAM.vhi -module CELLRAM -template /opt/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work source/CELLRAM.vhd 
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP_2/CELLRAM.vhi -module CELLRAM -template /opt/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work source/CELLRAM.vhd 
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP_2/CELLRAM.vhi -module CELLRAM -template /opt/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work source/CELLRAM.vhd 
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP_2/CELLRAM.vhi -module CELLRAM -template /opt/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work source/CELLRAM.vhd 

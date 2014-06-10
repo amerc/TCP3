@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="GPIO_SWITCHES">
+			<Port Id="7" Dir="IN"/>
+			<Port Id="6" Dir="IN"/>
+			<Port Id="5" Dir="IN"/>
+			<Port Id="4" Dir="IN"/>
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="GPIO_BUTTONS">
+			<Port Id="3" Dir="IN"/>
+			<Port Id="2" Dir="IN"/>
+			<Port Id="1" Dir="IN"/>
+			<Port Id="0" Dir="IN"/>
+		</Bus>
+		<Bus Id="RXD">
+			<Port Id="3" Dir="INOUT"/>
+			<Port Id="2" Dir="INOUT"/>
+			<Port Id="1" Dir="INOUT"/>
+			<Port Id="0" Dir="INOUT"/>
+		</Bus>
+		<Bus Id="TXD">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="GPIO_LEDS">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="CLK_IN" Dir="IN"/>
+		<Port Id="RST" Dir="IN"/>
+		<Port Id="RX" Dir="IN"/>
+		<Port Id="RXDV" Dir="IN"/>
+		<Port Id="TXCLK" Dir="IN"/>
+		<Port Id="RS232_RX" Dir="IN"/>
+		<Port Id="TX" Dir="OUT"/>
+		<Port Id="PHY_RESET" Dir="OUT"/>
+		<Port Id="RXER" Dir="INOUT"/>
+		<Port Id="RXCLK" Dir="INOUT"/>
+		<Port Id="TXEN" Dir="OUT"/>
+		<Port Id="TXER" Dir="INOUT"/>
+		<Port Id="PhyCol" Dir="INOUT"/>
+		<Port Id="RS232_TX" Dir="OUT"/>
+	</Ifc>
+</Interface>
+
