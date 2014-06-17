@@ -7,3 +7,5 @@ run
 -p XC6Slx16-CSG324
 -opt_level 1
 -opt_mode SPEED
+-auto_bram_packing yes
+-shreg_min_size 2

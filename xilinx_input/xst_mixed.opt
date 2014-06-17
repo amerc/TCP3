@@ -35,7 +35,15 @@ ParamFile: <design>_xst.scr
 "-opt_level 1";                   # Optimization Effort Criteria
                                   # 1 (Normal) or 2 (High)
 "-opt_mode SPEED";                # Optimization Criteria
+#"-fsm_style Bram";		  # Put FSM into BRAm instead of LUT
+#"-fsm_encoding Compact";
+"-auto_bram_packing yes";        # Enable packing of RAMS into one block
                                   # AREA or SPEED
+#"-slice_utilization_ratio 75";
+#"-shreg_extract yes";
+#"-resource_sharing yes";
+#"-register_duplication yes";
+"-shreg_min_size 2";
 End ParamFile
 End Program xst
 #

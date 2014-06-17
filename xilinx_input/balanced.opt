@@ -32,6 +32,14 @@ Program map
 -w;
 -o <design>_map.ncd;     # Output Mapped ncd file
 -intstyle xflow;         # Message Reporting Style: ise, xflow, or silent
+#-mt 2;			 # MultiThreading support. Default is off. Can be 2. For Virtex5, Spartan6 ..etc.
+#-lc speed;
+-bp;			# Map slice logic into unused BRAM
+#-pr b;			# Pack IO registers/latches into IO blocks
+#-c 1;			# Maximum compression
+#-global_opt area;
+
+#-register_duplication on; # confilict with <-global_opt area>
 # -fp <design>.mfp;      # Floorplan file
 # -gm incremental;	 # Guide mode
 # -timing;               # Perform Timing-Driven Packing and Placement
@@ -66,7 +74,8 @@ END Program post_map_trce
 #
 Program par
 -w;                       # Overwrite existing placed and routed ncd
--ol std;                  # Overall effort level
+-ol normal;                  # Overall effort level
+-xe normal;		  # PLacer extra effort
 -intstyle xflow;          # Message Reporting Style: ise, xflow, or silent
 # -gm incremental;	  # Guide mode
 <design>_map.ncd;         # Input mapped NCD file

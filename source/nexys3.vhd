@@ -87,7 +87,7 @@ entity NEXYS3 is
 
    --PHY INTERFACE
    TX            : out   	std_logic;       
-   RX            : in    	std_logic;       
+   RX            : in    	std_logic;--************* To be checked       
    PHY_RESET     : out   	std_logic;       
    RXDV          : in    	std_logic;       
    RXER          : inout  	std_logic;  --* inout        
@@ -106,7 +106,7 @@ entity NEXYS3 is
    GPIO_BUTTONS  : in  std_logic_vector(3 downto 0);   
 
    --RS232 INTERFACE
-	fx2Clk_pin	  : in    std_logic;
+	--fx2Clk_pin	  : in    std_logic;
    RS232_RX      : in    std_logic;
    RS232_TX      : out   std_logic;
 	
@@ -159,7 +159,7 @@ architecture RTL of NEXYS3 is
     RX_STB      : out std_logic;
     RX_ACK      : in  std_logic;
 -- LEDS --AMER
-	GPIO_LEDS 	: out std_logic_vector(7 downto 0);
+	GPIO_LEDS 	: out std_logic_vector(3 downto 0);
 	BtnL			 : in  std_logic;
 	SW0          : in  std_logic;
 	--7 seg 
@@ -333,8 +333,7 @@ architecture RTL of NEXYS3 is
   --signal RXD1              : std_logic;
   signal TX_LOCKED         : std_logic;
   signal INTERNAL_TXCLK    : std_logic;
-  signal INTERNAL_TXCLK_BUF: std_logic;
-  signal INTERNAL_TXCLK_BUF_N : std_logic;
+
  -- signal INTERNAL_TXCLK_BUF_180 : std_logic;
   signal TXCLK_BUF         : std_logic;  
   signal INTERNAL_RXCLK    : std_logic;
@@ -455,7 +454,7 @@ initPhyNexys3_inst1 :  initPhyNexys3 port map (
 		BtnL			=> GPIO_BUTTONS(0),		
 		SW0         => GPIO_SWITCHES(0),
 		--LEDs and 7seg AMER
-		GPIO_LEDS	=> GPIO_LEDS,
+		GPIO_LEDS	=> GPIO_LEDS(7 downto 4),
 		sseg_out   	=> sseg_out,
 		anodes_out 	=> anodes_out
 -- RAM
@@ -559,10 +558,10 @@ initPhyNexys3_inst1 :  initPhyNexys3 port map (
     wait until rising_edge(CLK);
     NOT_LOCKED <=  not LOCKED_INTERNAL;
     INTERNAL_RST <= NOT_LOCKED;
--- Desactivated the following to be used as test indicators
---    if OUTPUT_LEDS_STB = '1' then --AMER
---       GPIO_LEDS <= OUTPUT_LEDS(7 downto 0); -- AMER
---    end if;-- AMER
+-- Desactivated 4 leds to be used as test indicators
+    if OUTPUT_LEDS_STB = '1' then --AMER
+       GPIO_LEDS(3 downto 0) <= OUTPUT_LEDS(3 downto 0); -- AMER
+    end if;-- AMER
     OUTPUT_LEDS_ACK <= '1';
 
     INPUT_SWITCHES_STB <= '1';

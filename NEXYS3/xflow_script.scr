@@ -16,20 +16,5 @@ ngdbuild -p XC6Slx16-CSG324 -nt timestamp -intstyle xflow "NEXYS3.ngc" NEXYS3.ng
 #
 # Command line for map
 #
-map -w -o NEXYS3_map.ncd -intstyle xflow NEXYS3.ngd NEXYS3.pcf 
-
-#
-# Command line for par
-#
-par -w -ol std -intstyle xflow NEXYS3_map.ncd NEXYS3.ncd NEXYS3.pcf 
-
-#
-# Command line for post_par_trce
-#
-trce -e 3 -intstyle xflow -xml NEXYS3.twx NEXYS3.ncd NEXYS3.pcf 
-
-#
-# Command line for bitgen
-#
-bitgen -l -w -m -intstyle xflow NEXYS3.ncd 
+map -w -o NEXYS3_map.ncd -intstyle xflow -bp NEXYS3.ngd NEXYS3.pcf 
 

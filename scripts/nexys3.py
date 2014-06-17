@@ -8,6 +8,12 @@ import shutil
 
 from user_settings import xilinx
 
+if "clean" in sys.argv or "all" in sys.argv:
+    print "Cleaning NEXYS3 ...."
+    retval = os.system("rm -rf ../NEXYS3/*")
+    if retval != 0:
+        sys.exit(-1)
+
 current_directory = os.getcwd()
 working_directory = "NEXYS3"
 shutil.copyfile("xilinx_input/NEXYS3.ucf", os.path.join(working_directory, "NEXYS3.ucf"))
@@ -19,8 +25,9 @@ os.chdir(working_directory)
 
 if "compile" in sys.argv or "all" in sys.argv:
     print "Compiling C files using chips ...."
-    retval = os.system("../chips2/c2verilog ../source/user_design.c")
-    retval = os.system("../chips2/c2verilog ../source/server.c")
+    print "----------------------------------"
+    retval = os.system("../chips2/c2verilog area ../source/user_design.c")
+    retval = os.system("../chips2/c2verilog area ../source/server.c")
     if retval != 0:
         sys.exit(-1)
 
@@ -28,7 +35,7 @@ if "synth_estimate" in sys.argv:
     print "Test build to estimate size ...."
     os.mkdir(os.path.join(current_directory, "synth_estimate"))
     os.chdir(os.path.join(current_directory, "synth_estimate"))
-    retval = os.system("../chips2/c2verilog ../source/server.c")
+    retval = os.system("../chips2/c2verilog area ../source/server.c")
     output_file = open("server.prj", "w")
     output_file.write("verilog work server.v")
     output_file.close()
@@ -37,7 +44,7 @@ if "synth_estimate" in sys.argv:
     shutil.rmtree("synth_estimate")
 
 if "build" in sys.argv or "all" in sys.argv:
-    print "Building Demo using Xilinx ise ...."
+    print "Building SWM project using Xilinx ise ...."
     retval = os.system("%s/xflow -synth xst_mixed.opt -p XC6Slx16-CSG324 -implement balanced.opt -config bitgen.opt NEXYS3"%xilinx)
     if retval != 0:
         sys.exit(-1)

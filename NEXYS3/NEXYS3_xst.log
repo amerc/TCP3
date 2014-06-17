@@ -39,10 +39,12 @@ Target Device                      : XC6Slx16-CSG324
 
 ---- Source Options
 Top Module Name                    : NEXYS3
+Shift Register Minimum Size        : 2
 
 ---- General Options
 Optimization Effort                : 1
 Optimization Goal                  : SPEED
+Auto BRAM Packing                  : yes
 
 =========================================================================
 
@@ -125,26 +127,26 @@ Back to vhdl to continue elaboration
 Going to verilog side to elaborate module USER_DESIGN
 
 Elaborating module <user_design>.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5073: Result of 13-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5100: Result of 32-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5127: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5132: Result of 32-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5144: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5155: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5167: Result of 32-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5182: Result of 32-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5280: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5281: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5308: Result of 32-bit expression is truncated to fit in 12-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5327: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5433: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5452: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5453: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5454: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5455: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5456: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5458: Result of 16-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 5460: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4465: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4492: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4519: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4524: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4536: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4547: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4559: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4574: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4678: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4679: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4700: Result of 32-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4719: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4825: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4844: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4845: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4846: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4847: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4848: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4850: Result of 16-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v" Line 4852: Result of 16-bit expression is truncated to fit in 1-bit target.
 Back to vhdl to continue elaboration
 
 Elaborating entity <serial_output> (architecture <RTL>) with generics from library <work>.
@@ -157,9 +159,9 @@ Elaborating entity <CELLRAM> (architecture <BEHAVIOR>) from library <work>.
 
 Elaborating entity <SHELL_CELLRAM> (architecture <BEHAVIOR>) from library <work>.
 WARNING:HDLCompiler:634 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" Line 323: Net <CLK_OUT1_N> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" Line 402: Net <ReadMem> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" Line 403: Net <WriteMem> does not have a driver.
-WARNING:HDLCompiler:634 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" Line 406: Net <DB_o[15]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" Line 401: Net <ReadMem> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" Line 402: Net <WriteMem> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" Line 405: Net <DB_o[15]> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -168,18 +170,19 @@ WARNING:HDLCompiler:634 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" Line 406: N
 Synthesizing Unit <NEXYS3>.
     Related source file is "/home/amer/Nexys3/TCP3/source/nexys3.vhd".
 WARNING:Xst:647 - Input <RX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <fx2Clk_pin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 427: Output port <PHY_RESET> of the instance <ethernet_inst_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 491: Output port <output_leds> of the instance <USER_DESIGN_INST_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 491: Output port <output_leds_stb> of the instance <USER_DESIGN_INST_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 491: Output port <input_switches_ack> of the instance <USER_DESIGN_INST_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 491: Output port <input_buttons_ack> of the instance <USER_DESIGN_INST_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 990: Output port <MemIDLE> of the instance <Inst_CELLRAM> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 426: Output port <PHY_RESET> of the instance <ethernet_inst_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 490: Output port <input_switches_ack> of the instance <USER_DESIGN_INST_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 490: Output port <input_buttons_ack> of the instance <USER_DESIGN_INST_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/amer/Nexys3/TCP3/source/nexys3.vhd" line 989: Output port <MemIDLE> of the instance <Inst_CELLRAM> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <DB_o> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <CLK_OUT1_N> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <ReadMem> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <WriteMem> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <INTERNAL_RST>.
+    Found 1-bit register for signal <GPIO_LEDS<3>>.
+    Found 1-bit register for signal <GPIO_LEDS<2>>.
+    Found 1-bit register for signal <GPIO_LEDS<1>>.
+    Found 1-bit register for signal <GPIO_LEDS<0>>.
     Found 8-bit register for signal <GPIO_SWITCHES_D>.
     Found 4-bit register for signal <GPIO_BUTTONS_D>.
     Found 1-bit register for signal <NOT_LOCKED>.
@@ -187,11 +190,11 @@ WARNING:Xst:653 - Signal <WriteMem> is used but never assigned. This sourceless 
     Found 4-bit register for signal <INPUT_BUTTONS>.
     WARNING:Xst:2404 -  FFs/Latches <OUTPUT_LEDS_ACK<0:0>> (without init value) have a constant value of 1 in block <NEXYS3>.
     WARNING:Xst:2404 -  FFs/Latches <INPUT_SWITCHES_STB<0:0>> (without init value) have a constant value of 1 in block <NEXYS3>.
-    WARNING:Xst:2404 -  FFs/Latches <INPUT_SWITCHES<15:8>> (without init value) have a constant value of 0 in block <NEXYS3>.
     WARNING:Xst:2404 -  FFs/Latches <INPUT_BUTTONS_STB<0:0>> (without init value) have a constant value of 1 in block <NEXYS3>.
+    WARNING:Xst:2404 -  FFs/Latches <INPUT_SWITCHES<15:8>> (without init value) have a constant value of 0 in block <NEXYS3>.
     WARNING:Xst:2404 -  FFs/Latches <INPUT_BUTTONS<15:4>> (without init value) have a constant value of 0 in block <NEXYS3>.
     Summary:
-	inferred  26 D-type flip-flop(s).
+	inferred  30 D-type flip-flop(s).
 Unit <NEXYS3> synthesized.
 
 Synthesizing Unit <initPhyNexys3>.
@@ -232,9 +235,9 @@ WARNING:Xst:653 - Signal <FIFO_empty> is used but never assigned. This sourceles
     Found 1-bit register for signal <GO_SYNC>.
     Found 1-bit register for signal <DONE_DEL>.
     Found 1-bit register for signal <DONE_SYNC>.
-    Found 1-bit register for signal <GPIO_LEDS<6>>.
-    Found 1-bit register for signal <GPIO_LEDS<5>>.
-    Found 1-bit register for signal <GPIO_LEDS<4>>.
+    Found 1-bit register for signal <GPIO_LEDS<2>>.
+    Found 1-bit register for signal <GPIO_LEDS<1>>.
+    Found 1-bit register for signal <GPIO_LEDS<0>>.
     Found 5-bit register for signal <TX_PHY_STATE>.
     Found 11-bit register for signal <TX_READ_ADDRESS>.
     Found 11-bit register for signal <TX_OUT_COUNT>.
@@ -250,13 +253,7 @@ WARNING:Xst:653 - Signal <FIFO_empty> is used but never assigned. This sourceles
     Found 1-bit register for signal <RX_ERROR>.
     Found 11-bit register for signal <RX_START_ADDRESS>.
     Found 11-bit register for signal <RX_PACKET_LENGTH>.
-    Found 32-bit register for signal <RX_CRC>.
-    Found 1-bit register for signal <GPIO_LEDS<3>>.
-    Found 1-bit register for signal <GPIO_LEDS<2>>.
-    Found 1-bit register for signal <GPIO_LEDS<1>>.
-    Found 1-bit register for signal <GPIO_LEDS<0>>.
     Found 16-bit register for signal <RX_WRITE_DATA>.
-    Found 4-bit register for signal <LOW_NIBBLE>.
     Found 5-bit register for signal <RX_WRITE_BUFFER>.
     Found 32-bit register for signal <RX_BUFFER_BUSY>.
     Found 11-bit register for signal <RX_WRITE_ADDRESS>.
@@ -329,30 +326,30 @@ WARNING:Xst:653 - Signal <FIFO_empty> is used but never assigned. This sourceles
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 12-bit subtractor for signal <n1035> created at line 1308.
+    Found 12-bit subtractor for signal <n0778> created at line 1308.
     Found 11-bit adder for signal <TX_WRITE_ADDRESS[10]_GND_7_o_add_4_OUT> created at line 353.
     Found 11-bit adder for signal <TX_IN_COUNT[10]_GND_7_o_add_5_OUT> created at line 354.
     Found 11-bit adder for signal <TX_READ_ADDRESS[10]_GND_7_o_add_42_OUT> created at line 515.
     Found 11-bit adder for signal <RX_PACKET_LENGTH[10]_GND_7_o_add_88_OUT> created at line 1241.
     Found 5-bit adder for signal <RX_WRITE_BUFFER[4]_GND_7_o_add_105_OUT> created at line 694.
-    Found 11-bit adder for signal <RX_WRITE_ADDRESS[10]_GND_7_o_add_168_OUT> created at line 1241.
-    Found 11-bit adder for signal <RX_START_ADDRESS_SYNC[10]_GND_7_o_add_187_OUT> created at line 784.
-    Found 11-bit adder for signal <RX_READ_ADDRESS[10]_GND_7_o_add_188_OUT> created at line 1241.
-    Found 5-bit adder for signal <RX_READ_BUFFER[4]_GND_7_o_add_194_OUT> created at line 803.
+    Found 11-bit adder for signal <RX_WRITE_ADDRESS[10]_GND_7_o_add_164_OUT> created at line 1241.
+    Found 11-bit adder for signal <RX_START_ADDRESS_SYNC[10]_GND_7_o_add_183_OUT> created at line 784.
+    Found 11-bit adder for signal <RX_READ_ADDRESS[10]_GND_7_o_add_184_OUT> created at line 1241.
+    Found 5-bit adder for signal <RX_READ_BUFFER[4]_GND_7_o_add_190_OUT> created at line 803.
     Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_35_OUT<10:0>> created at line 1308.
     Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_40_OUT<10:0>> created at line 509.
-    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_181_OUT<10:0>> created at line 1308.
-    Found 1-bit 32-to-1 multiplexer for signal <RX_READ_BUFFER[4]_RX_BUFFER_BUSY_SYNC[31]_Mux_176_o> created at line 766.
+    Found 11-bit subtractor for signal <GND_7_o_GND_7_o_sub_177_OUT<10:0>> created at line 1308.
+    Found 1-bit 32-to-1 multiplexer for signal <RX_READ_BUFFER[4]_RX_BUFFER_BUSY_SYNC[31]_Mux_172_o> created at line 766.
     Found 16-bit comparator greater for signal <TX_PACKET_LENGTH[15]_INV_8_o> created at line 349
     Found 11-bit comparator greater for signal <RX_PACKET_LENGTH[10]_GND_7_o_LessThan_93_o> created at line 666
     Found 11-bit comparator greater for signal <PWR_7_o_RX_PACKET_LENGTH[10]_LessThan_94_o> created at line 670
-    Found 11-bit comparator equal for signal <RX_READ_ADDRESS[10]_RX_END_ADDRESS[10]_equal_193_o> created at line 797
+    Found 11-bit comparator equal for signal <RX_READ_ADDRESS[10]_RX_END_ADDRESS[10]_equal_189_o> created at line 797
     Summary:
 	inferred   4 RAM(s).
 	inferred  12 Adder/Subtractor(s).
-	inferred 433 D-type flip-flop(s).
+	inferred 393 D-type flip-flop(s).
 	inferred   4 Comparator(s).
-	inferred  56 Multiplexer(s).
+	inferred  40 Multiplexer(s).
 	inferred   4 Finite State Machine(s).
 Unit <ethernet> synthesized.
 
@@ -511,9 +508,9 @@ Synthesizing Unit <user_design>.
     Related source file is "/home/amer/Nexys3/TCP3/NEXYS3/user_design.v".
 WARNING:Xst:2999 - Signal 'instructions', unconnected in block 'user_design', is tied to its initial value.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <memory_2>, simulation mismatch.
-    Found 3764x16-bit single-port RAM <Mram_memory_2> for signal <memory_2>.
+    Found 3351x16-bit single-port RAM <Mram_memory_2> for signal <memory_2>.
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <instructions>, simulation mismatch.
-    Found 2600x52-bit single-port Read Only RAM <Mram_instructions> for signal <instructions>.
+    Found 2315x52-bit single-port Read Only RAM <Mram_instructions> for signal <instructions>.
     Found 1-bit register for signal <memory_enable_2>.
     Found 1-bit register for signal <write_enable_2>.
     Found 1-bit register for signal <stage_1_enable>.
@@ -641,25 +638,25 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <instruc
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit subtractor for signal <register_1[31]_literal_1[31]_sub_30_OUT> created at line 5196.
-    Found 32-bit subtractor for signal <literal_1[31]_register_1[31]_sub_34_OUT> created at line 5220.
-    Found 12-bit adder for signal <program_counter[11]_GND_14_o_add_6_OUT> created at line 5073.
-    Found 13-bit adder for signal <n0368[12:0]> created at line 5101.
-    Found 32-bit adder for signal <register_1[31]_literal_1[31]_add_42_OUT> created at line 5274.
-    Found 32-bit adder for signal <register_1[31]_registerb_1[31]_add_49_OUT> created at line 5346.
-    Found 16-bit subtractor for signal <GND_14_o_GND_14_o_sub_111_OUT<15:0>> created at line 5433.
-    Found 32-bit shifter logical left for signal <register_1[31]_literal_1[31]_shift_left_34_OUT> created at line 5226
-    Found 32-bit shifter logical right for signal <register_1[31]_literal_1[31]_shift_right_43_OUT> created at line 5295
+    Found 32-bit subtractor for signal <register_1[31]_literal_1[31]_sub_30_OUT> created at line 4588.
+    Found 32-bit subtractor for signal <literal_1[31]_register_1[31]_sub_34_OUT> created at line 4612.
+    Found 12-bit adder for signal <program_counter[11]_GND_14_o_add_6_OUT> created at line 4465.
+    Found 13-bit adder for signal <n0368[12:0]> created at line 4493.
+    Found 32-bit adder for signal <register_1[31]_literal_1[31]_add_43_OUT> created at line 4672.
+    Found 32-bit adder for signal <register_1[31]_registerb_1[31]_add_49_OUT> created at line 4738.
+    Found 16-bit subtractor for signal <GND_14_o_GND_14_o_sub_111_OUT<15:0>> created at line 4825.
+    Found 32-bit shifter logical left for signal <register_1[31]_literal_1[31]_shift_left_34_OUT> created at line 4618
+    Found 32-bit shifter logical right for signal <register_1[31]_literal_1[31]_shift_right_41_OUT> created at line 4660
 WARNING:Xst:3035 - Index value(s) does not match array range for signal <registers>, simulation mismatch.
-    Found 94x32-bit dual-port RAM <Mram_registers> for signal <registers>.
+    Found 92x32-bit dual-port RAM <Mram_registers> for signal <registers>.
     Found 64x1-bit Read Only RAM for signal <opcode_1[5]_GND_14_o_Mux_56_o>
     Found 64x1-bit Read Only RAM for signal <opcode_1[5]_GND_14_o_Mux_64_o>
-    Found 32-bit comparator greater for signal <n0031> created at line 5190
-    Found 32-bit comparator lessequal for signal <n0036> created at line 5214
-    Found 32-bit comparator equal for signal <register_1[31]_literal_1[31]_equal_37_o> created at line 5238
-    Found 32-bit comparator greater for signal <literal_1[31]_register_1[31]_LessThan_39_o> created at line 5250
-    Found 32-bit comparator greater for signal <register_1[31]_registerb_1[31]_LessThan_41_o> created at line 5262
-    Found 32-bit comparator equal for signal <register_1[31]_registerb_1[31]_equal_42_o> created at line 5268
+    Found 32-bit comparator greater for signal <n0031> created at line 4582
+    Found 32-bit comparator lessequal for signal <n0036> created at line 4606
+    Found 32-bit comparator equal for signal <register_1[31]_literal_1[31]_equal_37_o> created at line 4630
+    Found 32-bit comparator greater for signal <literal_1[31]_register_1[31]_LessThan_39_o> created at line 4642
+    Found 32-bit comparator greater for signal <register_1[31]_registerb_1[31]_LessThan_41_o> created at line 4654
+    Found 32-bit comparator equal for signal <register_1[31]_registerb_1[31]_equal_43_o> created at line 4666
     Summary:
 	inferred   6 RAM(s).
 	inferred   7 Adder/Subtractor(s).
@@ -814,16 +811,16 @@ Macro Statistics
  152x32-bit dual-port RAM                              : 2
  16x7-bit single-port Read Only RAM                    : 1
  2048x16-bit dual-port RAM                             : 1
- 2600x52-bit single-port Read Only RAM                 : 1
+ 2315x52-bit single-port Read Only RAM                 : 1
  2686x16-bit single-port RAM                           : 1
  32x11-bit dual-port RAM                               : 2
+ 3351x16-bit single-port RAM                           : 1
  3552x54-bit single-port Read Only RAM                 : 1
- 3764x16-bit single-port RAM                           : 1
  4x4-bit single-port Read Only RAM                     : 1
  512x16-bit dual-port RAM                              : 1
  64x1-bit single-port Read Only RAM                    : 2
  64x2-bit single-port Read Only RAM                    : 1
- 94x32-bit dual-port RAM                               : 2
+ 92x32-bit dual-port RAM                               : 2
 # Adders/Subtractors                                   : 33
  11-bit adder                                          : 7
  11-bit subtractor                                     : 2
@@ -839,7 +836,7 @@ Macro Statistics
  32-bit subtractor                                     : 4
  4-bit adder                                           : 1
  5-bit adder                                           : 2
-# Registers                                            : 167
+# Registers                                            : 165
  1-bit register                                        : 79
  11-bit register                                       : 11
  12-bit register                                       : 8
@@ -848,8 +845,8 @@ Macro Statistics
  2-bit register                                        : 2
  20-bit register                                       : 1
  25-bit register                                       : 1
- 32-bit register                                       : 15
- 4-bit register                                        : 7
+ 32-bit register                                       : 14
+ 4-bit register                                        : 6
  5-bit register                                        : 2
  52-bit register                                       : 1
  54-bit register                                       : 1
@@ -867,15 +864,15 @@ Macro Statistics
  32-bit comparator equal                               : 4
  32-bit comparator greater                             : 5
  32-bit comparator lessequal                           : 3
-# Multiplexers                                         : 290
- 1-bit 2-to-1 multiplexer                              : 135
+# Multiplexers                                         : 274
+ 1-bit 2-to-1 multiplexer                              : 121
  1-bit 32-to-1 multiplexer                             : 1
  1-bit 4-to-1 multiplexer                              : 5
  11-bit 2-to-1 multiplexer                             : 8
  12-bit 2-to-1 multiplexer                             : 18
  16-bit 2-to-1 multiplexer                             : 9
  20-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 66
+ 32-bit 2-to-1 multiplexer                             : 64
  4-bit 2-to-1 multiplexer                              : 30
  5-bit 2-to-1 multiplexer                              : 2
  6-bit 2-to-1 multiplexer                              : 2
@@ -885,11 +882,11 @@ Macro Statistics
  32-bit shifter logical left                           : 2
  32-bit shifter logical right                          : 2
 # FSMs                                                 : 17
-# Xors                                                 : 183
- 1-bit xor2                                            : 114
- 1-bit xor3                                            : 35
- 1-bit xor4                                            : 31
- 1-bit xor5                                            : 3
+# Xors                                                 : 128
+ 1-bit xor2                                            : 76
+ 1-bit xor3                                            : 20
+ 1-bit xor4                                            : 28
+ 1-bit xor5                                            : 4
 
 =========================================================================
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -913,21 +910,28 @@ The following registers are absorbed into counter <RX_WRITE_ADDRESS>: 1 register
 The following registers are absorbed into counter <TX_WRITE_ADDRESS>: 1 register on signal <TX_WRITE_ADDRESS>.
 The following registers are absorbed into counter <TX_READ_ADDRESS>: 1 register on signal <TX_READ_ADDRESS>.
 The following registers are absorbed into counter <RX_WRITE_BUFFER>: 1 register on signal <RX_WRITE_BUFFER>.
-INFO:Xst:3230 - The RAM description <Mram_RX_MEMORY> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+INFO:Xst:3226 - The RAM <Mram_RX_MEMORY> will be implemented as a BLOCK RAM, absorbing the following register(s): <RX_READ_ADDRESS>
     -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
+    | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
     |     aspect ratio   | 2048-word x 16-bit                  |          |
+    |     mode           | write-first                         |          |
     |     clkA           | connected to signal <RXCLK>         | rise     |
     |     weA            | connected to signal <RX_WRITE_ENABLE> | high     |
     |     addrA          | connected to signal <RX_WRITE_ADDRESS> |          |
     |     diA            | connected to signal <RX_WRITE_DATA> |          |
     -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 2048-word x 16-bit                  |          |
-    |     addrB          | connected to signal <RX_READ_ADDRESS> |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <RX_PACKET_STATE[2]_X_7_o_wide_mux_204_OUT> |          |
     |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 INFO:Xst:3226 - The RAM <Mram_TX_MEMORY> will be implemented as a BLOCK RAM, absorbing the following register(s): <TX_READ_DATA>
     -----------------------------------------------------------------------
@@ -952,22 +956,6 @@ INFO:Xst:3226 - The RAM <Mram_TX_MEMORY> will be implemented as a BLOCK RAM, abs
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_RX_PACKET_LENGTH_BUFFER> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 32-word x 11-bit                    |          |
-    |     clkA           | connected to signal <RXCLK>         | rise     |
-    |     weA            | connected to internal node          | high     |
-    |     addrA          | connected to signal <RX_WRITE_BUFFER> |          |
-    |     diA            | connected to signal <RX_PACKET_LENGTH> |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 32-word x 11-bit                    |          |
-    |     addrB          | connected to signal <RX_READ_BUFFER> |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
 INFO:Xst:3231 - The small RAM <Mram_RX_START_ADDRESS_BUFFER> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
@@ -978,6 +966,22 @@ INFO:Xst:3231 - The small RAM <Mram_RX_START_ADDRESS_BUFFER> will be implemented
     |     weA            | connected to internal node          | high     |
     |     addrA          | connected to signal <RX_WRITE_BUFFER> |          |
     |     diA            | connected to signal <RX_START_ADDRESS> |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 11-bit                    |          |
+    |     addrB          | connected to signal <RX_READ_BUFFER> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_RX_PACKET_LENGTH_BUFFER> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 11-bit                    |          |
+    |     clkA           | connected to signal <RXCLK>         | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <RX_WRITE_BUFFER> |          |
+    |     diA            | connected to signal <RX_PACKET_LENGTH> |          |
     -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 32-word x 11-bit                    |          |
@@ -1023,49 +1027,68 @@ INFO:Xst:3226 - The RAM <Mram_instructions> will be implemented as a BLOCK RAM, 
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
-INFO:Xst:3230 - The RAM description <Mram_registers> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+INFO:Xst:3226 - The RAM <Mram_registers> will be implemented as a BLOCK RAM, absorbing the following register(s): <register_1>
     -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
+    | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
     |     aspect ratio   | 152-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     weA            | connected to signal <write_enable_2_0> | high     |
     |     addrA          | connected to signal <dest_2>        |          |
     |     diA            | connected to signal <result_2>      |          |
     -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 152-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     enB            | connected to signal <stage_1_enable> | high     |
     |     addrB          | connected to signal <src_0[7]_instruction_0[39]_mux_10_OUT> |          |
-    |     doB            | connected to internal node          |          |
+    |     doB            | connected to signal <register_1>    |          |
     -----------------------------------------------------------------------
-INFO:Xst:3230 - The RAM description <Mram_memory_2> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+    | optimization       | speed                               |          |
     -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
+INFO:Xst:3226 - The RAM <Mram_memory_2> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_out_2>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
     |     aspect ratio   | 2686-word x 16-bit                  |          |
+    |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     weA            | connected to signal <memory_enable_2> | high     |
     |     addrA          | connected to signal <address_2>     |          |
     |     diA            | connected to signal <data_in_2>     |          |
-    |     doA            | connected to internal node          |          |
+    |     doA            | connected to signal <data_out_2>    |          |
     -----------------------------------------------------------------------
-INFO:Xst:3230 - The RAM description <Mram_registers1> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+    | optimization       | speed                               |          |
     -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
+INFO:Xst:3226 - The RAM <Mram_registers1> will be implemented as a BLOCK RAM, absorbing the following register(s): <registerb_1>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
     |     aspect ratio   | 152-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     weA            | connected to signal <write_enable_2_1> | high     |
     |     addrA          | connected to signal <dest_2>        |          |
     |     diA            | connected to signal <result_2>      |          |
     -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
     | Port B                                                              |
     |     aspect ratio   | 152-word x 32-bit                   |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     enB            | connected to signal <stage_1_enable> | high     |
     |     addrB          | connected to signal <srcb_0[7]_instruction_0[7]_mux_11_OUT> |          |
-    |     doB            | connected to internal node          |          |
+    |     doB            | connected to signal <registerb_1>   |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 INFO:Xst:3231 - The small RAM <Mram__n0875> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
@@ -1124,7 +1147,7 @@ INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the 
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 2600-word x 52-bit                  |          |
+    |     aspect ratio   | 2315-word x 52-bit                  |          |
     |     weA            | connected to signal <GND>           | high     |
     |     addrA          | connected to signal <program_counter> |          |
     |     diA            | connected to signal <GND>           |          |
@@ -1135,7 +1158,7 @@ INFO:Xst:3226 - The RAM <Mram_instructions> will be implemented as a BLOCK RAM, 
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 2600-word x 52-bit                  |          |
+    |     aspect ratio   | 2315-word x 52-bit                  |          |
     |     mode           | write-first                         |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     enA            | connected to signal <stage_0_enable> | high     |
@@ -1146,28 +1169,36 @@ INFO:Xst:3226 - The RAM <Mram_instructions> will be implemented as a BLOCK RAM, 
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
-INFO:Xst:3230 - The RAM description <Mram_registers> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+INFO:Xst:3226 - The RAM <Mram_registers> will be implemented as a BLOCK RAM, absorbing the following register(s): <register_1>
     -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
+    | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 94-word x 32-bit                    |          |
+    |     aspect ratio   | 92-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     weA            | connected to signal <write_enable_2_0> | high     |
     |     addrA          | connected to signal <dest_2>        |          |
     |     diA            | connected to signal <result_2>      |          |
     -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
     | Port B                                                              |
-    |     aspect ratio   | 94-word x 32-bit                    |          |
+    |     aspect ratio   | 92-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     enB            | connected to signal <stage_1_enable> | high     |
     |     addrB          | connected to signal <src_0[6]_instruction_0[38]_mux_10_OUT> |          |
-    |     doB            | connected to internal node          |          |
+    |     doB            | connected to signal <register_1>    |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 INFO:Xst:3226 - The RAM <Mram_memory_2> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_out_2>
     -----------------------------------------------------------------------
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 3764-word x 16-bit                  |          |
+    |     aspect ratio   | 3351-word x 16-bit                  |          |
     |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     weA            | connected to signal <memory_enable_2> | high     |
@@ -1177,21 +1208,29 @@ INFO:Xst:3226 - The RAM <Mram_memory_2> will be implemented as a BLOCK RAM, abso
     -----------------------------------------------------------------------
     | optimization       | speed                               |          |
     -----------------------------------------------------------------------
-INFO:Xst:3230 - The RAM description <Mram_registers1> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+INFO:Xst:3226 - The RAM <Mram_registers1> will be implemented as a BLOCK RAM, absorbing the following register(s): <registerb_1>
     -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
+    | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 94-word x 32-bit                    |          |
+    |     aspect ratio   | 92-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     weA            | connected to signal <write_enable_2_1> | high     |
     |     addrA          | connected to signal <dest_2>        |          |
     |     diA            | connected to signal <result_2>      |          |
     -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
     | Port B                                                              |
-    |     aspect ratio   | 94-word x 32-bit                    |          |
+    |     aspect ratio   | 92-word x 32-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     enB            | connected to signal <stage_1_enable> | high     |
     |     addrB          | connected to signal <srcb_0[6]_instruction_0[6]_mux_11_OUT> |          |
-    |     doB            | connected to internal node          |          |
+    |     doB            | connected to signal <registerb_1>   |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
     -----------------------------------------------------------------------
 INFO:Xst:3231 - The small RAM <Mram_opcode_1[5]_GND_14_o_Mux_64_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
@@ -1219,19 +1258,19 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 17
- 152x32-bit dual-port distributed RAM                  : 2
+ 152x32-bit dual-port block RAM                        : 2
  16x7-bit single-port distributed Read Only RAM        : 1
- 2048x16-bit dual-port distributed RAM                 : 1
- 2600x52-bit single-port block Read Only RAM           : 1
- 2686x16-bit single-port distributed RAM               : 1
+ 2048x16-bit dual-port block RAM                       : 1
+ 2315x52-bit single-port block Read Only RAM           : 1
+ 2686x16-bit single-port block RAM                     : 1
  32x11-bit dual-port distributed RAM                   : 2
+ 3351x16-bit single-port block RAM                     : 1
  3552x54-bit single-port block Read Only RAM           : 1
- 3764x16-bit single-port block RAM                     : 1
  4x4-bit single-port distributed Read Only RAM         : 1
  512x16-bit dual-port block RAM                        : 1
  64x1-bit single-port distributed Read Only RAM        : 2
  64x2-bit single-port distributed Read Only RAM        : 1
- 94x32-bit dual-port distributed RAM                   : 2
+ 92x32-bit dual-port block RAM                         : 2
 # Adders/Subtractors                                   : 22
  11-bit adder                                          : 4
  11-bit subtractor                                     : 3
@@ -1251,8 +1290,8 @@ Macro Statistics
  20-bit up counter                                     : 1
  25-bit up counter                                     : 1
  5-bit up counter                                      : 1
-# Registers                                            : 1126
- Flip-Flops                                            : 1126
+# Registers                                            : 946
+ Flip-Flops                                            : 946
 # Comparators                                          : 19
  11-bit comparator equal                               : 1
  11-bit comparator greater                             : 2
@@ -1263,15 +1302,15 @@ Macro Statistics
  32-bit comparator equal                               : 4
  32-bit comparator greater                             : 5
  32-bit comparator lessequal                           : 3
-# Multiplexers                                         : 304
- 1-bit 2-to-1 multiplexer                              : 156
+# Multiplexers                                         : 288
+ 1-bit 2-to-1 multiplexer                              : 142
  1-bit 32-to-1 multiplexer                             : 1
  1-bit 4-to-1 multiplexer                              : 5
  11-bit 2-to-1 multiplexer                             : 4
  12-bit 2-to-1 multiplexer                             : 16
  16-bit 2-to-1 multiplexer                             : 8
  20-bit 2-to-1 multiplexer                             : 1
- 32-bit 2-to-1 multiplexer                             : 66
+ 32-bit 2-to-1 multiplexer                             : 64
  4-bit 2-to-1 multiplexer                              : 30
  5-bit 2-to-1 multiplexer                              : 2
  6-bit 2-to-1 multiplexer                              : 2
@@ -1281,11 +1320,11 @@ Macro Statistics
  32-bit shifter logical left                           : 2
  32-bit shifter logical right                          : 2
 # FSMs                                                 : 17
-# Xors                                                 : 183
- 1-bit xor2                                            : 114
- 1-bit xor3                                            : 35
- 1-bit xor4                                            : 31
- 1-bit xor5                                            : 3
+# Xors                                                 : 128
+ 1-bit xor2                                            : 76
+ 1-bit xor3                                            : 20
+ 1-bit xor4                                            : 28
+ 1-bit xor5                                            : 4
 
 =========================================================================
 
@@ -1345,6 +1384,16 @@ Optimizing FSM <ethernet_inst_1/FSM_1> on signal <TX_PHY_STATE[1:5]> with user e
  done_state      | 11101
 -----------------------------
 Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ethernet_inst_1/FSM_0> on signal <TX_PACKET_STATE[1:2]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ get_length    | 00
+ get_data      | 01
+ send_packet   | 11
+ wait_not_done | 10
+---------------------------
+Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <ethernet_inst_1/FSM_3> on signal <RX_PACKET_STATE[1:3]> with user encoding.
 -----------------------------
  State           | Encoding
@@ -1356,16 +1405,6 @@ Optimizing FSM <ethernet_inst_1/FSM_3> on signal <RX_PACKET_STATE[1:3]> with use
  prefetch1       | 100
  send_length     | 101
 -----------------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <ethernet_inst_1/FSM_0> on signal <TX_PACKET_STATE[1:2]> with gray encoding.
----------------------------
- State         | Encoding
----------------------------
- get_length    | 00
- get_data      | 01
- send_packet   | 11
- wait_not_done | 10
----------------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <ethernet_inst_1/FSM_2> on signal <RX_PHY_STATE[1:3]> with user encoding.
 -------------------------------
@@ -1505,10 +1544,10 @@ Optimizing FSM <SERIAL_OUTPUT_INST_1/FSM_15> on signal <STATE[1:4]> with user en
  stop    | 1011
 ---------------------
 WARNING:Xst:1293 - FF/Latch <TX_IN_COUNT_0> has a constant value of 0 in block <ethernet>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <TX_READ_ADDRESS_9> of sequential type is unconnected in block <ethernet>.
-WARNING:Xst:2677 - Node <TX_READ_ADDRESS_10> of sequential type is unconnected in block <ethernet>.
 WARNING:Xst:2677 - Node <TX_WRITE_ADDRESS_9> of sequential type is unconnected in block <ethernet>.
 WARNING:Xst:2677 - Node <TX_WRITE_ADDRESS_10> of sequential type is unconnected in block <ethernet>.
+WARNING:Xst:2677 - Node <TX_READ_ADDRESS_9> of sequential type is unconnected in block <ethernet>.
+WARNING:Xst:2677 - Node <TX_READ_ADDRESS_10> of sequential type is unconnected in block <ethernet>.
 INFO:Xst:2261 - The FF/Latch <Tosseg_dat_11> in Unit <ethernet> is equivalent to the following FF/Latch, which will be removed : <Tosseg_dat_13> 
 
 Optimizing unit <NEXYS3> ...
@@ -1567,10 +1606,6 @@ WARNING:Xst:2677 - Node <USER_DESIGN_INST_1/s_output_leds_7> of sequential type 
 WARNING:Xst:2677 - Node <USER_DESIGN_INST_1/s_output_leds_6> of sequential type is unconnected in block <NEXYS3>.
 WARNING:Xst:2677 - Node <USER_DESIGN_INST_1/s_output_leds_5> of sequential type is unconnected in block <NEXYS3>.
 WARNING:Xst:2677 - Node <USER_DESIGN_INST_1/s_output_leds_4> of sequential type is unconnected in block <NEXYS3>.
-WARNING:Xst:2677 - Node <USER_DESIGN_INST_1/s_output_leds_3> of sequential type is unconnected in block <NEXYS3>.
-WARNING:Xst:2677 - Node <USER_DESIGN_INST_1/s_output_leds_2> of sequential type is unconnected in block <NEXYS3>.
-WARNING:Xst:2677 - Node <USER_DESIGN_INST_1/s_output_leds_1> of sequential type is unconnected in block <NEXYS3>.
-WARNING:Xst:2677 - Node <USER_DESIGN_INST_1/s_output_leds_0> of sequential type is unconnected in block <NEXYS3>.
 INFO:Xst:2399 - RAMs <Mram_instructions7>, <Mram_instructions6> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <Mram_instructions7>, <Mram_instructions8> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <Mram_instructions7>, <Mram_instructions5> are equivalent, second RAM is removed
@@ -1595,8 +1630,7 @@ INFO:Xst:2261 - The FF/Latch <USER_DESIGN_INST_1/literal_0_6> in Unit <NEXYS3> i
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block NEXYS3, actual ratio is 46.
-FlipFlop ethernet_inst_1/RX_PHY_STATE_FSM_FFd1 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 0) on block NEXYS3, actual ratio is 34.
 FlipFlop ethernet_inst_1/TX_PHY_STATE_FSM_FFd1 has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -1654,8 +1688,8 @@ Unit <NEXYS3> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1141
- Flip-Flops                                            : 1141
+# Registers                                            : 964
+ Flip-Flops                                            : 964
 # Shift Registers                                      : 46
  2-bit shift register                                  : 46
 
@@ -1680,36 +1714,31 @@ Top Level Output File Name         : NEXYS3.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4248
+# BELS                             : 3781
 #      GND                         : 1
-#      INV                         : 33
+#      INV                         : 34
 #      LUT1                        : 158
-#      LUT2                        : 385
-#      LUT3                        : 339
-#      LUT4                        : 452
-#      LUT5                        : 514
-#      LUT6                        : 1200
-#      MUXCY                       : 624
-#      MUXF7                       : 75
+#      LUT2                        : 359
+#      LUT3                        : 315
+#      LUT4                        : 485
+#      LUT5                        : 323
+#      LUT6                        : 970
+#      MUXCY                       : 629
+#      MUXF7                       : 40
 #      VCC                         : 1
 #      XORCY                       : 466
-# FlipFlops/Latches                : 1195
-#      FD                          : 229
-#      FDE                         : 758
-#      FDR                         : 108
+# FlipFlops/Latches                : 1018
+#      FD                          : 213
+#      FDE                         : 602
+#      FDR                         : 107
 #      FDRE                        : 80
 #      FDS                         : 5
-#      FDSE                        : 7
+#      FDSE                        : 3
 #      ODDR2                       : 8
-# RAMS                             : 599
-#      RAM128X1S                   : 16
-#      RAM256X1S                   : 160
+# RAMS                             : 41
 #      RAM32M                      : 4
-#      RAM32X1D                    : 128
-#      RAM64M                      : 220
-#      RAM64X1D                    : 44
-#      RAMB16BWER                  : 25
-#      RAMB8BWER                   : 2
+#      RAMB16BWER                  : 31
+#      RAMB8BWER                   : 6
 # Shift Registers                  : 46
 #      SRLC16E                     : 46
 # Clock Buffers                    : 9
@@ -1730,28 +1759,30 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1195  out of  18224     6%  
- Number of Slice LUTs:                 5039  out of   9112    55%  
-    Number used as Logic:              3081  out of   9112    33%  
-    Number used as Memory:             1958  out of   2176    89%  
-       Number used as RAM:             1912
+ Number of Slice Registers:            1018  out of  18224     5%  
+ Number of Slice LUTs:                 2706  out of   9112    29%  
+    Number used as Logic:              2644  out of   9112    29%  
+    Number used as Memory:               62  out of   2176     2%  
+       Number used as RAM:               16
        Number used as SRL:               46
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   5323
-   Number with an unused Flip Flop:    4128  out of   5323    77%  
-   Number with an unused LUT:           284  out of   5323     5%  
-   Number of fully used LUT-FF pairs:   911  out of   5323    17%  
+ Number of LUT Flip Flop pairs used:   3052
+   Number with an unused Flip Flop:    2034  out of   3052    66%  
+   Number with an unused LUT:           346  out of   3052    11%  
+   Number of fully used LUT-FF pairs:   672  out of   3052    22%  
    Number of unique control sets:        77
 
 IO Utilization: 
- Number of IOs:                         102
+ Number of IOs:                         101
  Number of bonded IOBs:                  99  out of    232    42%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               26  out of     32    81%  
-    Number using Block RAM only:         26
+ Number of Block RAM/FIFO:               34  out of     32   106% (*) 
+    Number using Block RAM only:         34
  Number of BUFG/BUFGCTRLs:                9  out of     16    56%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -1774,12 +1805,12 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK_IN                             | DCM_SP:CLKDV           | 1404  |
+CLK_IN                             | DCM_SP:CLKDV           | 902   |
 CLK_IN                             | DCM_SP:CLKFX           | 7     |
 CLK_IN                             | DCM_SP:CLKFX180        | 7     |
 IOBUF_INST3                        | NONE(ODDR2_INST25)     | 1     |
 TXCLK                              | BUFGP                  | 96    |
-RXCLK                              | DCM_SP:CLK0            | 334   |
+RXCLK                              | DCM_SP:CLK0            | 103   |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -1791,7 +1822,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 5.087ns (Maximum Frequency: 196.578MHz)
+   Minimum period: 5.097ns (Maximum Frequency: 196.180MHz)
    Minimum input arrival time before clock: 3.931ns
    Maximum output required time after clock: 6.244ns
    Maximum combinational path delay: No path found
@@ -1802,79 +1833,84 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK_IN'
-  Clock period: 4.450ns (frequency: 224.714MHz)
-  Total number of paths / destination ports: 60010 / 6127
+  Clock period: 4.602ns (frequency: 217.309MHz)
+  Total number of paths / destination ports: 46382 / 2133
 -------------------------------------------------------------------------
-Delay:               8.900ns (Levels of Logic = 8)
-  Source:            USER_DESIGN_INST_1/literal_1_15 (FF)
-  Destination:       USER_DESIGN_INST_1/result_2_14 (FF)
+Delay:               9.203ns (Levels of Logic = 9)
+  Source:            USER_DESIGN_INST_1/literal_1_24 (FF)
+  Destination:       USER_DESIGN_INST_1/result_2_3 (FF)
   Source Clock:      CLK_IN rising 0.5X
   Destination Clock: CLK_IN rising 0.5X
 
-  Data Path: USER_DESIGN_INST_1/literal_1_15 to USER_DESIGN_INST_1/result_2_14
+  Data Path: USER_DESIGN_INST_1/literal_1_24 to USER_DESIGN_INST_1/result_2_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             15   0.447   1.326  USER_DESIGN_INST_1/literal_1_15 (USER_DESIGN_INST_1/literal_1_15)
-     LUT6:I1->O            1   0.203   0.808  USER_DESIGN_INST_1/out3 (USER_DESIGN_INST_1/out2)
-     LUT3:I0->O            2   0.205   0.617  USER_DESIGN_INST_1/out7_SW0 (N286)
-     LUT6:I5->O           41   0.205   1.420  USER_DESIGN_INST_1/out7 (USER_DESIGN_INST_1/_n1061)
-     LUT3:I2->O            8   0.205   0.803  USER_DESIGN_INST_1/SF362211 (USER_DESIGN_INST_1/SF36221)
-     LUT6:I5->O            1   0.205   0.580  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT388 (USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT387)
-     LUT6:I5->O            1   0.205   0.580  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT389 (USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT388)
-     LUT6:I5->O            1   0.205   0.580  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT3810 (USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT389)
-     LUT6:I5->O            1   0.205   0.000  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT3811 (USER_DESIGN_INST_1/result_2[31]_GND_14_o_mux_107_OUT<14>)
-     FDE:D                     0.102          USER_DESIGN_INST_1/result_2_14
+     FDE:C->Q             14   0.447   1.302  USER_DESIGN_INST_1/literal_1_24 (USER_DESIGN_INST_1/literal_1_24)
+     LUT5:I0->O            1   0.203   0.808  USER_DESIGN_INST_1/out1 (USER_DESIGN_INST_1/out)
+     LUT5:I2->O            5   0.205   0.715  USER_DESIGN_INST_1/out4 (USER_DESIGN_INST_1/out3)
+     LUT6:I5->O           18   0.205   1.050  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT104131 (USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT10413)
+     LUT2:I1->O            2   0.205   0.617  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT13831 (USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT1383)
+     LUT6:I5->O            1   0.205   0.580  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT1363 (USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT1362)
+     LUT6:I5->O            1   0.205   0.580  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT1369_SW0 (N318)
+     LUT6:I5->O            1   0.205   0.580  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT1369 (USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT1368)
+     LUT6:I5->O            1   0.205   0.580  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT13614_SW0 (N280)
+     LUT6:I5->O            1   0.205   0.000  USER_DESIGN_INST_1/Mmux_result_2[31]_GND_14_o_mux_107_OUT13614 (USER_DESIGN_INST_1/result_2[31]_GND_14_o_mux_107_OUT<3>)
+     FDE:D                     0.102          USER_DESIGN_INST_1/result_2_3
     ----------------------------------------
-    Total                      8.900ns (2.187ns logic, 6.713ns route)
-                                       (24.6% logic, 75.4% route)
+    Total                      9.203ns (2.392ns logic, 6.812ns route)
+                                       (26.0% logic, 74.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'TXCLK'
-  Clock period: 5.087ns (frequency: 196.578MHz)
-  Total number of paths / destination ports: 2253 / 164
+  Clock period: 5.097ns (frequency: 196.180MHz)
+  Total number of paths / destination ports: 2236 / 164
 -------------------------------------------------------------------------
-Delay:               5.087ns (Levels of Logic = 3)
-  Source:            ethernet_inst_1/Mram_TX_MEMORY (RAM)
-  Destination:       ethernet_inst_1/TX_CRC_5 (FF)
+Delay:               5.097ns (Levels of Logic = 5)
+  Source:            ethernet_inst_1/TX_OUT_COUNT_2 (FF)
+  Destination:       ethernet_inst_1/TX_OUT_COUNT_10 (FF)
   Source Clock:      TXCLK rising
   Destination Clock: TXCLK rising
 
-  Data Path: ethernet_inst_1/Mram_TX_MEMORY to ethernet_inst_1/TX_CRC_5
+  Data Path: ethernet_inst_1/TX_OUT_COUNT_2 to ethernet_inst_1/TX_OUT_COUNT_10
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB8BWER:CLKBRDCLK->DOBDO12   10   1.850   0.961  ethernet_inst_1/Mram_TX_MEMORY (ethernet_inst_1/TX_READ_DATA<12>)
-     LUT3:I1->O            3   0.203   0.879  ethernet_inst_1/Mxor__n1870_xo<0>1 (ethernet_inst_1/_n1870)
-     LUT6:I3->O            1   0.205   0.684  ethernet_inst_1/Mmux__n1383192 (ethernet_inst_1/Mmux__n1383191)
-     LUT4:I2->O            1   0.203   0.000  ethernet_inst_1/Mmux__n1383193 (ethernet_inst_1/_n1383<27>)
-     FDE:D                     0.102          ethernet_inst_1/TX_CRC_5
+     FDE:C->Q              3   0.447   0.898  ethernet_inst_1/TX_OUT_COUNT_2 (ethernet_inst_1/TX_OUT_COUNT_2)
+     LUT4:I0->O            2   0.203   0.617  ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_xor<3>111 (ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_xor<3>11)
+     LUT6:I5->O            5   0.205   0.715  ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_cy<3>11 (ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_cy<3>)
+     LUT6:I5->O            5   0.205   0.715  ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_cy<6>1 (ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_cy<6>)
+     LUT6:I5->O            1   0.205   0.580  ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_xor<10>11 (ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_xor<10>1)
+     LUT6:I5->O            1   0.205   0.000  ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT_rs_xor<10>15 (ethernet_inst_1/TX_PHY_STATE[4]_X_7_o_wide_mux_61_OUT<10>)
+     FDE:D                     0.102          ethernet_inst_1/TX_OUT_COUNT_10
     ----------------------------------------
-    Total                      5.087ns (2.563ns logic, 2.524ns route)
-                                       (50.4% logic, 49.6% route)
+    Total                      5.097ns (1.572ns logic, 3.525ns route)
+                                       (30.8% logic, 69.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'RXCLK'
-  Clock period: 4.557ns (frequency: 219.425MHz)
-  Total number of paths / destination ports: 4470 / 2134
+  Clock period: 4.317ns (frequency: 231.656MHz)
+  Total number of paths / destination ports: 871 / 243
 -------------------------------------------------------------------------
-Delay:               4.557ns (Levels of Logic = 2)
-  Source:            ethernet_inst_1/RXD_D_0 (FF)
-  Destination:       ethernet_inst_1/RX_CRC_31 (FF)
+Delay:               4.317ns (Levels of Logic = 4)
+  Source:            ethernet_inst_1/RX_PACKET_LENGTH_2 (FF)
+  Destination:       ethernet_inst_1/RX_PHY_STATE_FSM_FFd1 (FF)
   Source Clock:      RXCLK rising +14
   Destination Clock: RXCLK rising +14
 
-  Data Path: ethernet_inst_1/RXD_D_0 to ethernet_inst_1/RX_CRC_31
+  Data Path: ethernet_inst_1/RX_PACKET_LENGTH_2 to ethernet_inst_1/RX_PHY_STATE_FSM_FFd1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              14   0.447   1.186  ethernet_inst_1/RXD_D_0 (ethernet_inst_1/RXD_D_0)
-     LUT4:I1->O            6   0.205   0.745  ethernet_inst_1/RX_PHY_STATE_FSM_FFd2-In11 (ethernet_inst_1/RX_PHY_STATE_FSM_FFd2-In1)
-     LUT6:I5->O           43   0.205   1.448  ethernet_inst_1/_n1433_inv1 (ethernet_inst_1/_n1433_inv)
-     FDE:CE                    0.322          ethernet_inst_1/RX_PACKET_LENGTH_0
+     FDE:C->Q              5   0.447   0.943  ethernet_inst_1/RX_PACKET_LENGTH_2 (ethernet_inst_1/RX_PACKET_LENGTH_2)
+     LUT4:I1->O            7   0.205   0.774  ethernet_inst_1/Mmux_RX_PHY_STATE[2]_RX_PACKET_LENGTH[10]_wide_mux_110_OUT611 (ethernet_inst_1/Mmux_RX_PHY_STATE[2]_RX_PACKET_LENGTH[10]_wide_mux_110_OUT61)
+     LUT5:I4->O            1   0.205   0.580  ethernet_inst_1/RX_PHY_STATE_FSM_FFd3-In112 (ethernet_inst_1/RX_PHY_STATE_FSM_FFd3-In112)
+     LUT5:I4->O            3   0.205   0.651  ethernet_inst_1/RX_PHY_STATE_FSM_FFd3-In113 (ethernet_inst_1/RX_PHY_STATE_FSM_FFd3-In11)
+     LUT5:I4->O            1   0.205   0.000  ethernet_inst_1/RX_PHY_STATE_FSM_FFd1-In1 (ethernet_inst_1/RX_PHY_STATE_FSM_FFd1-In)
+     FDR:D                     0.102          ethernet_inst_1/RX_PHY_STATE_FSM_FFd1
     ----------------------------------------
-    Total                      4.557ns (1.179ns logic, 3.378ns route)
-                                       (25.9% logic, 74.1% route)
+    Total                      4.317ns (1.369ns logic, 2.948ns route)
+                                       (31.7% logic, 68.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK_IN'
@@ -1890,7 +1926,7 @@ Offset:              3.931ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            20   1.222   1.093  GPIO_SWITCHES_0_IBUF (GPIO_SWITCHES_0_IBUF)
-     LUT3:I2->O           15   0.205   0.981  ethernet_inst_1/_n11661 (ethernet_inst_1/_n1166)
+     LUT3:I2->O           15   0.205   0.981  ethernet_inst_1/_n08971 (ethernet_inst_1/_n0897)
      FDR:R                     0.430          ethernet_inst_1/Tosseg_dat_0
     ----------------------------------------
     Total                      3.931ns (1.857ns logic, 2.074ns route)
@@ -1901,23 +1937,23 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'RXCLK'
   Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
 Offset:              1.940ns (Levels of Logic = 1)
-  Source:            RXDV (PAD)
-  Destination:       ethernet_inst_1/RXDV_D (FF)
+  Source:            RXER (PAD)
+  Destination:       ethernet_inst_1/RXER_D (FF)
   Destination Clock: RXCLK rising +14
 
-  Data Path: RXDV to ethernet_inst_1/RXDV_D
+  Data Path: RXER to ethernet_inst_1/RXER_D
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.616  RXDV_IBUF (RXDV_IBUF)
-     FD:D                      0.102          ethernet_inst_1/RXDV_D
+     IOBUF:IO->O           2   1.222   0.616  IOBUF_INST2 (RXER_BUF)
+     FD:D                      0.102          ethernet_inst_1/RXER_D
     ----------------------------------------
     Total                      1.940ns (1.324ns logic, 0.616ns route)
                                        (68.2% logic, 31.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_IN'
-  Total number of paths / destination ports: 219 / 49
+  Total number of paths / destination ports: 223 / 53
 -------------------------------------------------------------------------
 Offset:              6.244ns (Levels of Logic = 3)
   Source:            ethernet_inst_1/seven_seg_inst_1/count_16 (FF)
@@ -1956,25 +1992,6 @@ Offset:              4.110ns (Levels of Logic = 1)
                                        (73.4% logic, 26.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'RXCLK'
-  Total number of paths / destination ports: 4 / 4
--------------------------------------------------------------------------
-Offset:              3.597ns (Levels of Logic = 1)
-  Source:            ethernet_inst_1/GPIO_LEDS_3 (FF)
-  Destination:       GPIO_LEDS<3> (PAD)
-  Source Clock:      RXCLK rising +14
-
-  Data Path: ethernet_inst_1/GPIO_LEDS_3 to GPIO_LEDS<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDSE:C->Q             1   0.447   0.579  ethernet_inst_1/GPIO_LEDS_3 (ethernet_inst_1/GPIO_LEDS_3)
-     OBUF:I->O                 2.571          GPIO_LEDS_3_OBUF (GPIO_LEDS<3>)
-    ----------------------------------------
-    Total                      3.597ns (3.018ns logic, 0.579ns route)
-                                       (83.9% logic, 16.1% route)
-
-=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
@@ -1984,8 +2001,8 @@ Clock to Setup on destination clock CLK_IN
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_IN         |    8.900|         |         |         |
-RXCLK          |    4.252|         |         |         |
+CLK_IN         |    9.203|         |         |         |
+RXCLK          |    4.271|         |         |         |
 TXCLK          |    3.258|         |         |         |
 ---------------+---------+---------+---------+---------+
 
@@ -1994,8 +2011,8 @@ Clock to Setup on destination clock RXCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_IN         |    2.848|         |         |         |
-RXCLK          |    4.557|         |         |         |
+CLK_IN         |    2.835|         |         |         |
+RXCLK          |    4.317|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock TXCLK
@@ -2003,22 +2020,22 @@ Clock to Setup on destination clock TXCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_IN         |    5.598|         |         |         |
-TXCLK          |    5.087|         |         |         |
+CLK_IN         |    4.436|         |         |         |
+TXCLK          |    5.097|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 97.00 secs
-Total CPU time to Xst completion: 71.13 secs
+Total REAL time to Xst completion: 69.00 secs
+Total CPU time to Xst completion: 60.47 secs
  
 --> 
 
 
-Total memory usage is 454148 kilobytes
+Total memory usage is 442104 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  154 (   0 filtered)
-Number of infos    :   53 (   0 filtered)
+Number of warnings :  150 (   0 filtered)
+Number of infos    :   51 (   0 filtered)
 

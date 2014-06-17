@@ -5,6 +5,7 @@
 //  :Author: Jonathan P Dawson
 //  :Date: 17/10/2013
 //  :email: chips@jondawson.org.uk
+//  : Revised by Amer AL-Canaan 2014, e-mail amer_c1@hotmail.com
 //  :license: MIT
 //  :Copyright: Copyright (C) Jonathan P Dawson 2013
 //  
@@ -102,14 +103,21 @@ Content-Length: 0\r\n\r\n";
 	socket_flush();
 }
 
-void HTTP_OK(int body[], unsigned header[]){
+void HTTP_OK(unsigned body[]){
 	unsigned header_length;
 	unsigned body_length;
 	unsigned length, index, packet_count;
+	unsigned header[] = 
+"HTTP/1.1 200 OK\r\n\
+Date: Thu June 11 19:16:00 2014\r\n\
+Server: chips-web/0.0\r\n\
+Content-Type: text/html\r\n\
+Content-Length: ";
 
-	//count body length
+	//count body's length
 	body_length = 0;
 	while(body[body_length]) body_length++;
+	
 	//count header length
 	header_length = 0;
 	while(header[header_length]) header_length++;
@@ -147,15 +155,13 @@ void HTTP_OK(int body[], unsigned header[]){
 	}
 	socket_flush();
 }
-void HTTP_OK2(int body[], unsigned header[]){//img/jpg, img/png, img/gif, img/tif, img/bmp
+//
+void HTTP_OK2(unsigned body[], unsigned header[], unsigned body_length){//img/jpg, img/png, img/gif, img/tif, img/bmp
 	unsigned header_length;
-	unsigned body_length;
+	unsigned cnt;
 	unsigned length, index, packet_count;
 
 
-	//count body length
-	body_length = 0;
-	while(body[body_length]) body_length++;
 	//count header length
 	header_length = 0;
 	while(header[header_length]) header_length++;
@@ -164,32 +170,38 @@ void HTTP_OK2(int body[], unsigned header[]){//img/jpg, img/png, img/gif, img/ti
 	length = header_length + 5;
 	//header length depends on body length
 	if(body_length > 9) length++;
+		
 	if(body_length > 99) length++;
+
 	if(body_length > 999) length++;
-	//Send length to server
+		
+	//Send header's length to server
 	put_socket(length);
 	//Send header to server
 	socket_put_string(header);
-	socket_put_decimal(body_length);
+	socket_put_decimal(body_length);//AMERRRRRRRR
 	socket_put_string("\r\n\r\n");
 	socket_flush();
 
-	length = 76;//body_length;AMER
+	length = body_length;//AMER
 	index = 0;
 	packet_count = 0;
-	while(length >= 1046){
+	while(length >= 1046){ //AMER was 1046
 		length -= 1046;
-		put_socket(1046);
-		for(packet_count=0; packet_count<1046; packet_count++){
-			socket_put_char(body[index]);
+		put_socket(1046);//AMER was 1046
+		for(packet_count=0; packet_count < 523; packet_count++){
+			put_socket(body[index]);//AMER sent 16 bits at a time
 			index++;
+			
 		}
-		socket_flush();
+		//socket_flush(); //nothing to flush
 	}
 	put_socket(length);
-	for(packet_count=0; packet_count<length; packet_count++){
-		socket_put_char(body[index]);
+	for(packet_count=0; packet_count<(length>>1); packet_count++){
+		put_socket(body[index]);
 		index++;
+		
 	}
-	socket_flush();
+	//socket_flush();//nothing to flush
+	
 }

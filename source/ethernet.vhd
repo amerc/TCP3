@@ -109,7 +109,7 @@ entity ethernet is
     RX          : out std_logic_vector(15 downto 0);
     RX_STB      : out std_logic;
     RX_ACK      : in  std_logic;
-	 GPIO_LEDS	 : out std_logic_vector(7 downto 0);
+	 GPIO_LEDS	 : out std_logic_vector(3 downto 0);
 	 -- Btn
 	 BtnL			 : in  std_logic;
 	 --7 seg 
@@ -420,7 +420,7 @@ begin
     case TX_PHY_STATE is
 
       when WAIT_NEW_PACKET => 
-		GPIO_LEDS(6 downto 4) <= b"001";
+		GPIO_LEDS(2 downto 0) <= b"001";
         if GO_SYNC = '1' then
           TX_PHY_STATE <= PREAMBLE_0;
           TX_READ_ADDRESS <= 0;
@@ -470,7 +470,7 @@ begin
         TX_PHY_STATE <= PREAMBLE_10;
 
       when PREAMBLE_10 => 
-		GPIO_LEDS(6 downto 4) <= "010";
+		GPIO_LEDS(2 downto 0) <= "010";
         TXD <= X"5"; 
         TX_PHY_STATE <= PREAMBLE_11;
 
@@ -567,7 +567,7 @@ begin
       when DONE_STATE => 
         TXEN <= '0'; 
         DONE <= '1';
-		  GPIO_LEDS(6 downto 4) <= "100";
+		  GPIO_LEDS(2 downto 0) <= "100";
         if GO_SYNC = '0' then
           TX_PHY_STATE <= WAIT_NEW_PACKET;
           DONE <= '0';
@@ -613,7 +613,7 @@ begin
         elsif RXD_D /= X"5" or RXDV_D = '0' then
           RX_PHY_STATE <= WAIT_START;
         end if;
-		  GPIO_LEDS(3 downto 0) <= X"0";
+		  --GPIO_LEDS(2 downto 0) <= X"0";
 
       when DATA_HIGH_LOW =>
         RX_WRITE_DATA(11 downto 8) <= RXD_D;
@@ -662,24 +662,24 @@ begin
         if RX_ERROR = '1' then
           RX_PHY_STATE <= WAIT_START;
 			 		 RX_PHY_STATE <= NOTIFY_NEW_PACKET; --AMER
-			 GPIO_LEDS(3 downto 0) <= X"7";
+			 --GPIO_LEDS(2 downto 0) <= X"7";
          elsif RX_PACKET_LENGTH < 64 then --AMER
 					 RX_PHY_STATE <= NOTIFY_NEW_PACKET; --AMER
-			GPIO_LEDS(3 downto 0) <= X"1";
+			--GPIO_LEDS(2 downto 0) <= X"1";
           RX_PHY_STATE <= WAIT_START; --AMER
         elsif RX_PACKET_LENGTH > 1518 then --AMER
 		  		 RX_PHY_STATE <= NOTIFY_NEW_PACKET; --AMER
-		  GPIO_LEDS(3 downto 0) <= X"3";
+		  --GPIO_LEDS(2 downto 0) <= X"3";
           RX_PHY_STATE <= WAIT_START;--AMER
         elsif RX_CRC /= X"C704dd7B" then
 		    ToFIFOdata <= x"FF"; -- When a packed is discarded store FF in FIFO
 		    FIFO_WE <= '1';
           RX_PHY_STATE <= WAIT_START;--AMER
 		 RX_PHY_STATE <= NOTIFY_NEW_PACKET; --AMER
-		 GPIO_LEDS(3 downto 0) <= X"f"; --AMER
+		 --GPIO_LEDS(2 downto 0) <= X"f"; --AMER
         else
           RX_PHY_STATE <= NOTIFY_NEW_PACKET;
-			 GPIO_LEDS(3 downto 0) <= X"4";
+			 --GPIO_LEDS(2 downto 0) <= X"4";
 			 ToFIFOdata <= std_logic_vector(RX_PACKET_LENGTH(7 downto 0));
 			 FIFO_WE <= '1';
         end if;
@@ -702,7 +702,7 @@ begin
 
     if RST = '1' then
       RX_PHY_STATE <= WAIT_START;
-		GPIO_LEDS(3 downto 0) <= X"F";
+		--GPIO_LEDS(2 downto 0) <= X"F";
     end if;
   end process RX_PHY_FSM;
 
@@ -817,7 +817,7 @@ begin
   ----------------------------------------------------------------------
   PHY_RESET <= not RST;
   -- A 1 Hz indicator on LED7 derived from the TXCLK
-  GPIO_LEDS(7) <= CLK1Hz;
+  GPIO_LEDS(3) <= CLK1Hz;
   ------- 
  --This process displays some values on the 7-segment display 
 DISPLAY_FIFO: process

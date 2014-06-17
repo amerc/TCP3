@@ -3,12 +3,13 @@ Xilinx Map Application Log File for Design 'NEXYS3'
 
 Design Information
 ------------------
-Command Line   : map -w -o NEXYS3_map.ncd -intstyle xflow NEXYS3.ngd NEXYS3.pcf 
+Command Line   : map -w -o NEXYS3_map.ncd -intstyle xflow -bp NEXYS3.ngd
+NEXYS3.pcf 
 Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Jun 10 05:17:41 2014
+Mapped Date    : Tue Jun 17 13:25:21 2014
 
 WARNING:Map:34 - Speed grade not specified.  Using default "-3".
 Mapping design into LUTs...
@@ -18,804 +19,161 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 35 secs 
-Total CPU  time at the beginning of Placer: 23 secs 
+Total REAL time at the beginning of Placer: 19 secs 
+Total CPU  time at the beginning of Placer: 15 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:dd469053) REAL time: 38 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:f2b28254) REAL time: 21 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:dd469053) REAL time: 39 secs 
+Phase 2.7  Design Feasibility Check (Checksum:f2b28254) REAL time: 22 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:dd469053) REAL time: 39 secs 
+Phase 3.31  Local Placement Optimization (Checksum:f2b28254) REAL time: 22 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:bfb98c4e) REAL time: 52 secs 
+(Checksum:56772d75) REAL time: 27 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:bfb98c4e) REAL time: 52 secs 
+Phase 5.36  Local Placement Optimization (Checksum:56772d75) REAL time: 27 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:bfb98c4e) REAL time: 52 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:56772d75) REAL time: 27 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:bfb98c4e) REAL time: 52 secs 
+Phase 7.3  Local Placement Optimization (Checksum:56772d75) REAL time: 27 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:bfb98c4e) REAL time: 53 secs 
+Phase 8.5  Local Placement Optimization (Checksum:56772d75) REAL time: 28 secs 
 
 Phase 9.8  Global Placement
-..................................
-......................................................................
-.........................................................................................................................................................................................
-............................................................................................................................
-.......................................................
-Phase 9.8  Global Placement (Checksum:dc044967) REAL time: 3 mins 5 secs 
+....................................
+......................................................
+...............................
+......................................
+ERROR:Place:543 - This design does not fit into the number of slices available
+   in this device due to the complexity of the design and/or constraints.
 
-Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:dc044967) REAL time: 3 mins 6 secs 
+   Unplaced instances by type:
 
-Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:619b70d6) REAL time: 3 mins 41 secs 
+     BLOCKRAM    4 (10.8%)
 
-Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:619b70d6) REAL time: 3 mins 42 secs 
+   Please evaluate the following:
 
-Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:1c41083c) REAL time: 3 mins 43 secs 
+   - If there are user-defined constraints or area groups:
+     Please look at the "User-defined constraints" section below to determine
+     what constraints might be impacting the fitting of this design.
+     Evaluate if they can be moved, removed or resized to allow for fitting.
+     Verify that they do not overlap or conflict with clock region restrictions.
+     See the clock region reports in the MAP log file (*map) for more details
+     on clock region usage.
 
-Total REAL time to Placer completion: 3 mins 45 secs 
-Total CPU  time to Placer completion: 2 mins 11 secs 
-Running post-placement packing...
-Writing output files...
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY37_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY57_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY60_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY69_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY89_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY92_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY74_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY76_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY73_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY31_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY28_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY160_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY159_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY158_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY139_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY38_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY39_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY40_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY42_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY44_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY58_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY59_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY72_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY70_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY71_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY91_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY90_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY75_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY5_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY8_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY6_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY32_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY29_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY26_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY30_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY11_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY157_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY137_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY138_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY134_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY133_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY136_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY45_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY46_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY41_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY43_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY126_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY62_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY77_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_START_ADDRESS_BUFFER2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_PACKET_LENGTH_BUFFER2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_START_ADDRESS_BUFFER1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY93_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY83_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY7_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY25_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY27_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY10_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY12_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY140_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY148_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY146_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY129_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY135_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY48_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY47_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY54_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY55_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY36_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY78_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY80_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_PACKET_LENGTH_BUFFER1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY94_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY68_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY84_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY19_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY4_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY3_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY18_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY20_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY9_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY150_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY152_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY130_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY147_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY132_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY131_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers7_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers8_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY107_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY108_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY120_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY53_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY56_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY63_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY61_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY64_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY79_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY88_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY96_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY95_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY67_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY82_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY24_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY21_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY16_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY15_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY13_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY17_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY2_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY149_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY154_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY155_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY145_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY143_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY144_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers4_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers3_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers5_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers24_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers26_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers27_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY102_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY105_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY119_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY117_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY118_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY128_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY127_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY115_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY49_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY50_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY51_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY52_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY87_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY65_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY81_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY22_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY23_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY14_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers115_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY1_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers117_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY153_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY151_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers118_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers119_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY141_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY156_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers11_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers12_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers6_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers17_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers134_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers2_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers10_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers9_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers21_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers23_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers25_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY106_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY101_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY125_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY35_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY85_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY86_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY66_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers113_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers2_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers5_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers116_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers16_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers15_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers18_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers112_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers20_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers22_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers28_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY112_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY109_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY110_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY124_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY122_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY114_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY98_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY97_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY34_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY33_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY116_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers112_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers3_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers4_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers6_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers7_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers8_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers9_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY142_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers13_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers14_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers110_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers19_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers113_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers114_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers115_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <SERVER_INST_1/Mram_registers29_RAMD_O>
-   is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY103_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY104_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY111_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY121_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY123_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY113_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY100_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <ethernet_inst_1/Mram_RX_MEMORY99_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers111_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers110_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers114_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers11_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <USER_DESIGN_INST_1/Mram_registers10_RAMD_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers116_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers111_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers118_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers117_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers120_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <SERVER_INST_1/Mram_registers119_RAMD_O> is incomplete. The signal does not
-   drive any load pins in the design.
-WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
-   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
-   default, may be incorrect and should not be used.  For more information,
-   please reference Xilinx Answer Record 39999.
+   - If there is difficulty in placing LUTs:
+     Try using the MAP LUT Combining Option (map lc area|auto|off).
 
-Design Summary
---------------
+   - If there is difficulty in placing FFs:
+     Evaluate the number and configuration of the control sets in your design.
 
-Design Summary:
-Number of errors:      0
-Number of warnings:  226
-Slice Logic Utilization:
-  Number of Slice Registers:                 1,189 out of  18,224    6%
-    Number used as Flip Flops:               1,187
-    Number used as Latches:                      0
-    Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:                2
-  Number of Slice LUTs:                      4,467 out of   9,112   49%
-    Number used as logic:                    2,642 out of   9,112   28%
-      Number using O6 output only:           2,023
-      Number using O5 output only:             148
-      Number using O5 and O6:                  471
-      Number used as ROM:                        0
-    Number used as Memory:                   1,809 out of   2,176   83%
-      Number used as Dual Port RAM:          1,112
-        Number using O6 output only:           968
-        Number using O5 output only:             2
-        Number using O5 and O6:                142
-      Number used as Single Port RAM:          672
-        Number using O6 output only:           672
-        Number using O5 output only:             0
-        Number using O5 and O6:                  0
-      Number used as Shift Register:            25
-        Number using O6 output only:             4
-        Number using O5 output only:             0
-        Number using O5 and O6:                 21
-    Number used exclusively as route-thrus:     16
-      Number with same-slice register load:      6
-      Number with same-slice carry load:        10
-      Number with other load:                    0
+   The following instances are the last set of instances that failed to place:
 
-Slice Logic Distribution:
-  Number of occupied Slices:                 1,406 out of   2,278   61%
-  Number of MUXCYs used:                       664 out of   4,556   14%
-  Number of LUT Flip Flop pairs used:        4,751
-    Number with an unused Flip Flop:         3,646 out of   4,751   76%
-    Number with an unused LUT:                 284 out of   4,751    5%
-    Number of fully used LUT-FF pairs:         821 out of   4,751   17%
-    Number of unique control sets:             126
-    Number of slice register sites lost
-      to control set restrictions:             385 out of  18,224    2%
+   0. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM USER_DESIGN_INST_1_Mram_instructions13
+   1. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM SERVER_INST_1_Mram_instructions5
+   2. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM ethernet_inst_1/Mram_RX_MEMORY2
+   3. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM USER_DESIGN_INST_1/Mram_memory_24
 
-  A LUT Flip Flop pair for this architecture represents one LUT paired with
-  one Flip Flop within a slice.  A control set is a unique combination of
-  clock, reset, set, and enable signals for a registered element.
-  The Slice Logic Distribution report is not meaningful if the design is
-  over-mapped for a non-slice resource or if Placement fails.
+Phase 9.8  Global Placement (Checksum:d257681f) REAL time: 5 mins 7 secs 
 
-IO Utilization:
-  Number of bonded IOBs:                        99 out of     232   42%
-    Number of LOCed IOBs:                       99 out of      99  100%
-    IOB Flip Flops:                              8
+Phase 10.8  Global Placement
+..
+........................................................
+................................................................................................
+.....................
+ERROR:Place:543 - This design does not fit into the number of slices available
+   in this device due to the complexity of the design and/or constraints.
 
-Specific Feature Utilization:
-  Number of RAMB16BWERs:                        25 out of      32   78%
-  Number of RAMB8BWERs:                          2 out of      64    3%
-  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
-    Number used as BUFIO2s:                      1
-    Number used as BUFIO2_2CLKs:                 0
-  Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
-    Number used as BUFIO2FBs:                    1
-    Number used as BUFIO2FB_2CLKs:               0
-  Number of BUFG/BUFGMUXs:                       7 out of      16   43%
-    Number used as BUFGs:                        7
-    Number used as BUFGMUX:                      0
-  Number of DCM/DCM_CLKGENs:                     2 out of       4   50%
-    Number used as DCMs:                         2
-    Number used as DCM_CLKGENs:                  0
-  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
-  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
-  Number of OLOGIC2/OSERDES2s:                   8 out of     248    3%
-    Number used as OLOGIC2s:                     8
-    Number used as OSERDES2s:                    0
-  Number of BSCANs:                              0 out of       4    0%
-  Number of BUFHs:                               0 out of     128    0%
-  Number of BUFPLLs:                             0 out of       8    0%
-  Number of BUFPLL_MCBs:                         0 out of       4    0%
-  Number of DSP48A1s:                            0 out of      32    0%
-  Number of ICAPs:                               0 out of       1    0%
-  Number of MCBs:                                0 out of       2    0%
-  Number of PCILOGICSEs:                         0 out of       2    0%
-  Number of PLL_ADVs:                            0 out of       2    0%
-  Number of PMVs:                                0 out of       1    0%
-  Number of STARTUPs:                            0 out of       1    0%
-  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+   Unplaced instances by type:
 
-Average Fanout of Non-Clock Nets:                5.63
+     BLOCKRAM    3 (8.1%)
 
-Peak Memory Usage:  777 MB
-Total REAL time to MAP completion:  4 mins 1 secs 
-Total CPU time to MAP completion:   2 mins 18 secs 
+   Please evaluate the following:
+
+   - If there are user-defined constraints or area groups:
+     Please look at the "User-defined constraints" section below to determine
+     what constraints might be impacting the fitting of this design.
+     Evaluate if they can be moved, removed or resized to allow for fitting.
+     Verify that they do not overlap or conflict with clock region restrictions.
+     See the clock region reports in the MAP log file (*map) for more details
+     on clock region usage.
+
+   - If there is difficulty in placing LUTs:
+     Try using the MAP LUT Combining Option (map lc area|auto|off).
+
+   - If there is difficulty in placing FFs:
+     Evaluate the number and configuration of the control sets in your design.
+
+   The following instances are the last set of instances that failed to place:
+
+   0. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM SERVER_INST_1/Mram_memory_23
+   1. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM USER_DESIGN_INST_1_Mram_instructions13
+   2. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM ethernet_inst_1/Mram_RX_MEMORY1
+
+Phase 10.8  Global Placement (Checksum:278bc378) REAL time: 9 mins 31 secs 
+
+Phase 11.9  Local Placement Optimization
+ERROR:Place:543 - This design does not fit into the number of slices available
+   in this device due to the complexity of the design and/or constraints.
+
+   Unplaced instances by type:
+
+     BLOCKRAM    3 (8.1%)
+
+   Please evaluate the following:
+
+   - If there are user-defined constraints or area groups:
+     Please look at the "User-defined constraints" section below to determine
+     what constraints might be impacting the fitting of this design.
+     Evaluate if they can be moved, removed or resized to allow for fitting.
+     Verify that they do not overlap or conflict with clock region restrictions.
+     See the clock region reports in the MAP log file (*map) for more details
+     on clock region usage.
+
+   - If there is difficulty in placing LUTs:
+     Try using the MAP LUT Combining Option (map lc area|auto|off).
+
+   - If there is difficulty in placing FFs:
+     Evaluate the number and configuration of the control sets in your design.
+
+   The following instances are the last set of instances that failed to place:
+
+   0. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM SERVER_INST_1/Mram_memory_23
+   1. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM USER_DESIGN_INST_1_Mram_instructions13
+   2. Placer RPM "Ppc" (size: 3)
+      BLOCKRAM ethernet_inst_1/Mram_RX_MEMORY1
+
+ERROR:Place:120 - There were not enough sites to place all selected components.
+
+Phase 11.9  Local Placement Optimization (Checksum:278bc378) REAL time: 9 mins 31 secs 
+
+Total REAL time to Placer completion: 9 mins 31 secs 
+Total CPU  time to Placer completion: 9 mins 12 secs 
+ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
 
 Mapping completed.
 See MAP report file "NEXYS3_map.mrp" for details.
+Problem encountered during the packing phase.
+
+Design Summary
+--------------
+Number of errors   :   5
+Number of warnings :   1
